@@ -9,7 +9,7 @@ const Header = (props) => {
         <header className={classes.header}>
             <h1>ReactMeals</h1>
             
-            <HeaderCartButton shown={props.shown} hide={props.hide}></HeaderCartButton>
+            <HeaderCartButton key={Math.random().toString()} shown={props.shown} hide={props.hide}></HeaderCartButton>
         </header>
 
         <div className={classes['main-image']}>

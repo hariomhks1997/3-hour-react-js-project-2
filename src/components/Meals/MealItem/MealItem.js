@@ -14,7 +14,8 @@ const MealItem = (props) => {
         
         </div>
     <div>
-    <MealItemForm></MealItemForm>
+      
+    <MealItemForm item={props} id={props.id} key={Math.random().toString()}></MealItemForm>
     </div>
     </li>
   )

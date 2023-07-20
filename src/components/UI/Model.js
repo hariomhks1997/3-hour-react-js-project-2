@@ -18,8 +18,8 @@ const portalelement=document.getElementById('overlays')
 const Model = (props) => {
   return (
     <Fragment>
-     {ReactDOM.createPortal(<Backdrop onClick={props.onClick}></Backdrop>,portalelement)}
-     {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>,portalelement)}
+     {ReactDOM.createPortal(<Backdrop key={Math.random().toString()} onClick={props.onClick}></Backdrop>,portalelement)}
+     {ReactDOM.createPortal(<ModalOverlay key={Math.random().toString()}>{props.children}</ModalOverlay>,portalelement)}
     </Fragment>
   )
 }

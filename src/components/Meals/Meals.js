@@ -4,8 +4,8 @@ import AvaliableMeal from './AvaliableMeal';
 const Meals = () => {
   return (
     <Fragment>
-        <MealSummary></MealSummary>
-        <AvaliableMeal></AvaliableMeal>
+        <MealSummary key={Math.random().toString()}></MealSummary>
+        <AvaliableMeal key={Math.random().toString()}></AvaliableMeal>
 
     </Fragment>
   )
